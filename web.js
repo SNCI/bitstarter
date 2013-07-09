@@ -3,9 +3,10 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send('Hello World from index.html\n');
+    var fs=require('fs');
+//  response.send('Hello World from index.html\n');
 //   var htmlIn=fs.readFileSync("index.html","utf-8");
-//   response.send(htmlIn);
+   response.send(fs.readFileSync(__dirname+'/index.html',"utf-8");
 
 });
 
