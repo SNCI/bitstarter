@@ -6,7 +6,7 @@ app.get('/', function(request, response) {
     var fs=require('fs');
 //  response.send('Hello World from index.html\n');
 //   var htmlIn=fs.readFileSync("index.html","utf-8");
-   response.send(fs.readFileSync(__dirname+'/index.html',"utf-8");
+   response.send(fs.readFileSync(__dirname+'/index.html',"utf-8"));
 
 });
 
